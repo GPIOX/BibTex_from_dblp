@@ -77,6 +77,14 @@ print(r.status_code)
 print(r.json())
 ```
 
+## Fastapi可视化界面
+初始界面
+![image](https://github.com/GPIOX/BibTex_from_dblp/blob/master/image/fig1.png)
+
+批量搜索结果
+![image](https://github.com/GPIOX/BibTex_from_dblp/blob/master/image/fig2.png)
+
+
 ## 代理支持（可选）
 如需经代理访问 DBLP，设置环境变量：
 

@@ -9,8 +9,8 @@ import os
 from urllib.parse import urlencode
 app = FastAPI(title="DBLP BibTeX Fetcher")
 
-HTTP_PROXY = os.environ.get('HTTP_PROXY', '')
-HTTPS_PROXY = os.environ.get('HTTPS_PROXY', '')
+HTTP_PROXY = os.environ.get('HTTP_PROXY', '') # 例如: 'http://127.0.0.1:7890'
+HTTPS_PROXY = os.environ.get('HTTPS_PROXY', '') # 例如: 'https://127.0.0.1:7890'
 PROXIES = None
 if HTTP_PROXY or HTTPS_PROXY:
     PROXIES = {}
